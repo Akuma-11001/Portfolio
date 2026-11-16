@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<base href="https://www.mywebsite.com">  <!- This doesnt seem to work- Only affects relative URLS, dont get that yet. -->
+    <title>Navigation</title> <!-- This should be the category so only Navigation-->
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/layout2.css">
+    <link rel="stylesheet" href="../css/Project_List.css">
+</head>
+
+<div id="Layout"></div>
+
+
+
+<div class="main-div">
+    <div class="space-div-cols"></div>
+
+<!-- Project 1-->
+    <div class="projects">
+        <a href="../Project_Details/TCP_Server.html" class="large-img">
+            <div><img></div> 
+        </a>
+        <div class="title_and_description">
+            <a href="../Project_Details/TCP_Server.html">TCP-Server-Website</a>                  
+            <details>
+                <summary>Description</summary>
+                <h3> Link has more details:
+                </h3>
+                <h3> Description: Written in C. I only used the really needed libaries for sockets. Has 2 Servers (TCP and Gateway) and the JS frontend client.
+                </h3>
+            </details>
+        </div>                                            
+    </div>
+
+    <div class="space-div-cols"></div>
+
+<!-- Project 2-->
+    <div class="projects">
+        <a href="#" class="large-img">
+            <div><img></div>
+        </a>
+        <div class="title_and_description">
+            <a href="#">In Work...</a>                  
+            <details>
+                <summary>Description</summary>
+                <h3>The next project that is being worked on.
+                </h3>
+            </details>
+        </div>                                            
+    </div>
+            
+
+    <div class="space-div-cols"></div>   
+
+<script src="../js/Layout.js"></script>
+    <script> 
+        Layout("Layout", "../layout/Layout2.html")
+    </script>
+</main>

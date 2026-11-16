@@ -1,0 +1,141 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+
+    background-color: #1a1a1a;
+    color: white;
+
+    /* Height and width is already done*/
+}
+
+.main-div {
+    width: 100%;
+    height: 86vh;
+
+    overflow-y: scroll;
+}
+
+.space-div-cols {
+    width: 100%;
+    height: 10%;
+}
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+
+    height: auto;
+    gap: 2rem;
+
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.projects .large-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 81%;
+    height: 15rem;
+
+
+
+    overflow: hidden;
+}
+.projects .large-img > div{ /* This div needs to be removed and then I can use img instead of div and delete the bg*/
+
+    width: 98%;
+    height: 90%;
+
+    border: 1px solid white;
+
+    background: var(--color2); 
+
+    transition: transform 0.3s ease;
+}
+.projects .large-img:hover > div {
+    transform: scale(1.15);
+}
+
+
+.projects a[href] {
+    color: var(--color3);
+    text-decoration: underline yellow;
+
+}
+.projects a[href]:hover {
+    color: yellow;
+
+}
+
+
+
+.projects .title_and_description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 72%;
+    gap: 1rem;
+}
+
+.projects .title_and_description > details {
+    width: 100%;
+}
+.projects .title_and_description > details[open] {
+    text-align: left;
+}
+.projects .title_and_description > details > summary {
+    text-align: center;
+    list-style-position: inside;
+    cursor: pointer;
+    color: var(--color3)
+}
+.projects .title_and_description > details >h3 {
+    text-align: justify;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+@media (max-width: 450px) { /* Phones*/
+
+    html {
+        font-size: 6px; /* I would go for something in between 350 and 450 to cover every phone. So 400. 1920 / 400 = 4.7.
+                            16 / 4.7 = 3, but that wont work, because on a phone the ratio is diffrent (height > width)
+                            Now, I have to add a bit to that. The factor is: 1.5
+                        */
+    }
+
+    .space-div-cols {
+        height: 15%;
+    }
+
+
+
+}
+
+
+@media (min-width: 700px) and (max-width: 900px) { /* Tablets*/
+
+    html {
+        font-size: 11px; /*  1920 / 800 = 2.3, 16 / 2.3 = 7
+                            Factor: 1.5         7 * 1.5 = 11
+                        */
+    }                       
+
+/* The factor for gaps and padding is diffrent. Dont know a calculation for that yet*/
+
+
+
+}

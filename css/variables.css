@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* At some point the font size has to be changed to 10px or so instead of 16px for the global rem size*/ 
+
+html, body {
+    height: 100%;           /* So I always have to set this.*/
+     
+    
+}
+
+:root {
+    --sidebar-width: 10vw;
+    --color1: ;
+    --color2: #3b3b3b;
+    --color3: #F5F5dc;
+}
+/* I am not sure if it has to be defined in its own file or if I can have root for every css file*/

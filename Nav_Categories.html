@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<base href="https://www.mywebsite.com">  <!- This doesnt seem to work- Only affects relative URLS, dont get that yet. -->
+    <title>Navigation</title> <!-- This should be the category so only Navigation-->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout2.css">
+    <link rel="stylesheet" href="css/Categories.css">
+</head>
+<body>
+
+<main>
+
+<div id="Layout"></div>
+
+
+
+<div class="main-div">
+    <div class="space-div-cols"></div>
+    <div class="columns">   <!-- Need to have a css file for this Navigation_Categories.css and then a layout_nav_1-->
+                            <!-- So for this I need to have the title and then the image diretly right to it. 
+                                    1 row = 1 Title and 1 Image 
+                                    I need 3 rows (Data, Web, C)
+                            -->
+            
+            <a href="Project_Lists/Data_Projects.html">
+                <h3>Data Projects</h3>
+                <div class="medium-img">
+                    <div><img src=""></div>
+                </div>
+            </a>
+            <a href="Project_Lists/Fullstack_Web.html">
+                <h3>Web Fullstack Projects </h3>
+                <div class="medium-img">
+                    <div><img src=""></div>
+                </div>
+            </a>
+            <a href="Project_Lists/C_Low_Level_Projects.html">
+                <h3>C Low-level Projects </h3>
+                <div class="medium-img">
+                    <div><img src=""></div>
+                </div>
+            </a>
+
+
+            <a href="Project_Lists/AI_Projects.html">
+                <h3>AI Projects </h3>
+                <div class="medium-img">
+                    <div><img src=""></div>
+                </div>
+            </a>
+
+    </div>
+    <div class="space-div-cols"></div>   
+
+<script src="js/Layout.js"></script>
+    <script> 
+        Layout("Layout", "layout/Layout2.html")
+    </script>
+</main>
+</body>

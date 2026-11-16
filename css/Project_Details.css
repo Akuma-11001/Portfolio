@@ -1,0 +1,157 @@
+
+/* Every other Screensize then the normal Desktop version is in the @media queries below*/
+/* At some point the font size has to be changed to 10px or so instead of 16px for the global rem size*/ 
+
+html {
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+
+    background-color: #1a1a1a;
+    color: white;
+
+    /* Height and width is already done*/
+}
+
+
+
+
+
+
+.main-div {
+    width: 100%;
+    height: 86vh;
+    overflow-y: scroll;
+}
+
+.space-div-cols {
+    width: 100%;
+    height: 10%;
+}
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+
+    height: auto;
+    gap: 2rem;
+
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+.projects .title {
+
+    font-size: 2.5rem;
+}
+
+
+.projects .very-large-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 95%;
+    height: 45rem;
+    background: var(--color2);
+}
+
+.projects .details-title {
+    font-size: 2rem;
+}
+
+
+
+
+.important_words {
+    text-decoration: underline;
+    text-decoration-color: #FFFF00;
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 0.4rem;
+}
+
+
+.projects .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+    width: 95%;
+    list-style-position: inside;
+    gap: 1rem;
+
+    font-size: 2rem;
+}
+.projects .details .space-1 {
+    width: 95%;
+    height: 1rem;
+}
+
+.projects .details .space-2 {
+    width: 95%;
+    height: 2rem;
+}
+.projects .details .space-3 {
+    width: 95%;
+    height: 3rem;
+}
+.projects .details .space-4 {
+    width: 95%;
+    height: 4rem;
+}
+
+.projects .bottom-line-space-1 {
+    width: 95%;
+    height: 1rem;
+
+    border-bottom: 1px solid white;
+}
+
+.projects .details > ul > li::marker {
+    color: yellow;
+}
+
+
+
+/* Every other Screensize then the normal Desktop version*/ 
+
+@media (max-width: 450px) { /* Phones*/
+
+    html {
+        font-size: 6px; /* I would go for something in between 350 and 450 to cover every phone. So 400. 1920 / 400 = 4.7.
+                            16 / 4.7 = 3, but that wont work, because on a phone the ratio is diffrent (height > width)
+                            Now, I have to add a bit to that. The factor is: 1.5
+                        */
+    }
+
+    .space-div-cols {
+        height: 15%;
+    }
+
+}
+
+
+@media (min-width: 700px) and (max-width: 900px) { /* Tablets*/
+
+    html {
+        font-size: 11px; /*  1920 / 800 = 2.3, 16 / 2.3 = 7
+                            Factor: 1.5         7 * 1.5 = 11
+                        */
+    }                       
+
+/* The factor for gaps and padding is diffrent. Dont know a calculation for that yet*/
+
+
+
+}
