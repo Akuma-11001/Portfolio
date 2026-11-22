@@ -32,3 +32,11 @@ function Layout(id, file)
   console.log("ID:", id);
   console.log("Element:", document.getElementById(id));
 }
+
+function openGifViewer() {
+    document.getElementById("gifViewer").classList.add("active");
+}
+
+function closeGifViewer() {
+    document.getElementById("gifViewer").classList.remove("active");
+}

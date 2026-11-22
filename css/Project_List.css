@@ -48,9 +48,12 @@ body {
 
 
 
-    overflow: hidden;
+
 }
-.projects .large-img > div{ /* This div needs to be removed and then I can use img instead of div and delete the bg*/
+.projects .large-img > div{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     width: 98%;
     height: 90%;
@@ -59,6 +62,8 @@ body {
 
     background: var(--color2); 
 
+    cursor: pointer;
+    overflow: hidden;
     transition: transform 0.3s ease;
 }
 .projects .large-img:hover > div {

@@ -23,9 +23,13 @@
         <div class="title">
             <h1>FullStack React Dashboard/Login</h1>                  
         </div>     
-
-        <div class="very-large-img">
-            <div><img></div>
+        
+        <div class="very-large-img" onClick="openGifViewer()">
+            <img src="../gifs/Data.gif" class="large-gif">
+        </div>
+        <h5>Click the image for a Fullscreen view</h5>
+        <div id="gifViewer" class="gif-viewer" onClick="closeGifViewer()">
+            <img src="../gifs/Data.gif">
         </div>
              <div class="details-title">
             <h1>Details about this project:</h1>                  
@@ -42,7 +46,7 @@
                 <li>What has been implemented</li>
             </ul>
             <div class="space-2"></div>
-            <h2>Everything more technical will be avaialble on Github.</h2>
+            <h2>Everything more technical will be available on <a href="https://github.com/Akuma-11001">Github</a>.</h2>
 
 
             <div class="space-4"></div>
@@ -51,13 +55,32 @@
             <div class="space-4"></div>
             <h2 style="color: yellow">About the project:</h2>
             <div class="space-3"></div>
-            <h3>The project is about...</h3>
+            
+            <h3>
+    The project renders <span class="important_words">one Dashboard for each project</span> (I have two data projects). 
+    For this, I used <span class="important_words">Dash</span>, so I didn't have to create a backend, but I am not sure 
+    if creating one would be that much harder for me now.
+    The <span class="important_words">data ETL process</span> is done beforehand, and I have divided the next steps into 
+    <span class="important_words">Machine Learning (ML)</span> and <span class="important_words">Data Analysis</span>. 
+    I didn't include the ML graphs in the Dashboard because I don't think they belong there, but they could have been included.
+
+    I created <span class="important_words">two reports</span>, which cover most of what the ML process is about, including images.
+
+    For these reports, I used <span class="important_words">Markdown (MD) files</span> and 
+    <span class="important_words">Quarto</span> to generate <span class="important_words">automated PDF reports</span>.
+
+    The graphs in the Dashboard are <span class="important_words">Plotly graphs</span>, but 
+    in my <span class="important_words">Jupyter Notebooks (ipynb)</span> and reports, 
+    I also used <span class="important_words">Matplotlib</span>.
+            </h3>
+
 
             <div class="space-4"></div>
             <div class="space-3"></div>
             <h2 style="color: yellow">Tools:</h2>
             <div class="space-3"></div>
-            <h3>The project is about...</h3>
+            <h3>Python, Pandas, Scikit-Learn, numpy, matplotlib, plotly, dash,
+                 Quarto (for automated reports)</h3>
 
 
         </div>

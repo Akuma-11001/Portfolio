@@ -80,11 +80,21 @@ body {
 
 }
 .columns > a > .medium-img > div{ /* This div needs to be removed and then I can use img instead of div and delete the bg*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
 
 
     background: var(--color2); 
+    
+}
+.columns > a > .medium-img  img{ /* This div needs to be removed and then I can use img instead of div and delete the bg*/
+    width: 50%;
+    height: 80%;
+
+
     
 }
 
